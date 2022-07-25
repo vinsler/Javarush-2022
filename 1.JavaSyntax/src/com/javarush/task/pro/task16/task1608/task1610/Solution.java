@@ -1,4 +1,4 @@
-package com.javarush.task.pro.task16.task1610;
+package com.javarush.task.pro.task16.task1608.task1610;
 
 import javax.swing.text.html.HTMLDocument;
 import java.time.LocalTime;
