@@ -5,6 +5,12 @@ import java.time.format.DateTimeFormatter;
 
 /* 
 Простой шаблон
+В методе main выведи на экран переменную localDateTime в таком виде:
+19.03.2020г. 5ч.4мин
+
+
+Requirements:
+1. Метод main должен вывести в консоли значение переменной localDateTime согласно шаблону.
 */
 
 public class Solution {
@@ -13,5 +19,7 @@ public class Solution {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd.MM.yyyyг. Hч.mмин");
+        System.out.println(dtf.format(localDateTime));
     }
 }
