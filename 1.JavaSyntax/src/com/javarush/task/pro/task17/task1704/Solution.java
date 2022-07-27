@@ -4,6 +4,23 @@ import java.util.ArrayList;
 
 /* 
 Космическая одиссея ч.2
+Все члены экипажа космического корабля находятся на борту, корабль успешно вышел в открытый космос.
+Команде пора приступить к выполнению своих обязанностей:
+Людям — пилотировать корабль, Собаке — заниматься навигацией, а Коту — исследовать открытый космос.
+
+Распредели обязанности членов экипажа в методе runWorkingProcess().
+
+Для этого достань из списка astronauts всех людей (ты знаешь, под какими индексами они находятся) и передай их в качестве аргументов методу pilot(Human human), собаку передай в метод createDirection(Dog dog), а кота — в метод research(Cat cat).
+Другие методы не изменяй.
+
+Подсказка:
+Список astronauts содержит объекты типа Astronaut. Чтобы вызвать методы pilot(), createDirection() и research(), сначала объект Astronaut нужно привести к правильному типу.
+
+
+Requirements:
+1. Метод runWorkingProcess() должен вызывать pilot(Human human) 2 раза. В качестве аргументов передать все объекты типа Human из списка astronauts.
+2. Метод runWorkingProcess() должен вызывать createDirection(Dog dog) 1 раз. В качестве аргумента передать объект типа Dog из списка astronauts.
+3. Метод runWorkingProcess() должен вызывать research(Cat cat) 1 раз. В качестве аргумента передать объект типа Cat из списка astronauts.
 */
 
 public class Solution {
@@ -17,6 +34,11 @@ public class Solution {
 
     public static void runWorkingProcess() {
         //напишите тут ваш код
+        pilot((Human) astronauts.get(0));
+        pilot((Human) astronauts.get(1));
+        createDirection((Dog) astronauts.get(2));
+        research((Cat) astronauts.get(3));
+
     }
 
     public static void pilot(Human human){
