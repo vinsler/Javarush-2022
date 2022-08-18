@@ -9,10 +9,8 @@ public class Solution {
 
     }
 
-    public static class Pet {
-        public String getName() {
-            return "Я - котенок";
-        }
+    public static abstract class Pet {
+        public abstract String getName();
     }
 
 }
