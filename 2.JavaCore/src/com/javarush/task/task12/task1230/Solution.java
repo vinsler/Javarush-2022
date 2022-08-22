@@ -12,6 +12,9 @@ public class Solution {
         System.out.println(x);
     }
 
+    public static int transformValue(Integer i) {
+        return i + i;
+    }
     public static int transformValue(int i) {
         return i * i;
     }
