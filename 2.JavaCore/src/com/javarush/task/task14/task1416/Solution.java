@@ -27,6 +27,7 @@ public class Solution {
     }
 
     static abstract class SeaCreature {
+
         public void swim() {
             SeaCreature currentCreature = (SeaCreature) getCurrentCreature();
             currentCreature.displaySwim();
