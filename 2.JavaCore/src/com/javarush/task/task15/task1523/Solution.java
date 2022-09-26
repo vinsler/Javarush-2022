@@ -5,8 +5,19 @@ package com.javarush.task.task15.task1523;
 */
 
 public class Solution {
-    public static void main(String[] args) {
+    Solution(){
+    }
 
+    public Solution(int i){
+    }
+
+    private Solution(String s){
+    }
+
+    protected Solution(boolean b){
+    }
+
+    public static void main(String[] args) {
     }
 }
 
