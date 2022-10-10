@@ -41,9 +41,7 @@ public class Solution {
             kitten2.join();
         }
     }
-
     // ======================================================================================================
-
     public static class Kitten extends Thread {
         public Kitten(String name) {
             super(name); // А тут еще один поток Thread("Котенок 1, мама - " + getName()))
