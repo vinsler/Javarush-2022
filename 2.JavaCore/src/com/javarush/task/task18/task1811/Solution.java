@@ -32,18 +32,16 @@ public class Solution {
     }
 
     public static class DecoratorMyRunnableImpl implements Runnable {
-        private Runnable component;
+        private Runnable component; // ref by class
 
-
-        public DecoratorMyRunnableImpl(Runnable component) {
+        public DecoratorMyRunnableImpl(Runnable component) { // cnstrct
             this.component = component;
         }
 
         @Override
-        public void run() {
+        public void run() { // and there run wth sout by name class
             System.out.println("DecoratorMyRunnableImpl body");
             component.run();
         }
     }
-
 }
